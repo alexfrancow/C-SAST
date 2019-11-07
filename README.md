@@ -27,7 +27,10 @@ $ docker volume inspect codewarrior
 
 $ docker run -d -v codewarrior:/apps -p 1345:1345 <image ID>
 $ docker ps
-<get container ID>
+
+CONTAINER ID        IMAGE               COMMAND                  CREATED              PORTS                             
+ccc823cec873        6ab4e54752df        "/docker-entrypoint.…"   About a minute ago   443/tcp, 0.0.0.0:1345->1345/tcp
+
 $ docker exec -it <container ID> /bin/bash
 
 ```
