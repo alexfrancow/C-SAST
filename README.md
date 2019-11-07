@@ -5,12 +5,6 @@ An automated software vulnerability detection app with machine learning.
 $ docker build -t "test:dockerfile" .
 $ docker images
 <get image ID from test repository>
-  
-$ docker run -d -p 443:443 <image ID>
-$ docker ps
-<get container ID>
-$ docker exec -it <container ID> /bin/bash
-
 
 #Persistencia:
 $ docker volume create codewarrior
@@ -30,5 +24,10 @@ $ docker volume inspect codewarrior
 ]
 
 # Todo lo que haya dentro de /var/lib/docker/volumes/codewarrior/_data va a aparecer en la carpeta /apps de nuestro contenedor.
+
+$ docker run -d -v codewarrior:/apps -p 443:443 <image ID>
+$ docker ps
+<get container ID>
+$ docker exec -it <container ID> /bin/bash
 
 ```
