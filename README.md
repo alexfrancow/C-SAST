@@ -25,7 +25,7 @@ $ docker volume inspect codewarrior
 
 # Todo lo que haya dentro de /var/lib/docker/volumes/codewarrior/_data va a aparecer en la carpeta /apps de nuestro contenedor.
 
-$ docker run -d -v codewarrior:/apps -p 443:443 <image ID>
+$ docker run -d -v codewarrior:/apps -p 1345:1345 <image ID>
 $ docker ps
 <get container ID>
 $ docker exec -it <container ID> /bin/bash
