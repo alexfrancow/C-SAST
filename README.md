@@ -34,5 +34,6 @@ ccc823cec873        6ab4e54752df        "/docker-entrypoint.…"   About a minut
 $ docker exec -it <container ID> /bin/bash
 
 ```
+Test ```/apps/DVWA/vulnerabilities/sqli/source```
 
 <p align="center"><img src="images/01.png" /></p>
